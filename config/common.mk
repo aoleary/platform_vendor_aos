@@ -50,6 +50,13 @@ PRODUCT_COPY_FILES += \
     vendor/aos/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/aos/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
+ifeq ($(AB_OTA_UPDATER),true)
+PRODUCT_COPY_FILES += \
+    vendor/aos/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
+    vendor/aos/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
+    vendor/aos/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+endif
+
 # Required packages
 PRODUCT_PACKAGES += \
     SpareParts \
