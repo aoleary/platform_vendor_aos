@@ -41,6 +41,10 @@ type Product_variables struct {
 		Cppflags []string
 	}
 
+ 	Cant_reallocate_omx_buffers struct {
+ 		Cflags []string
+        }
+
 	Uses_generic_camera_parameter_library struct {
 		Srcs []string
 	}
@@ -58,4 +62,5 @@ type ProductVariables struct {
 	TargetUsesQCOMBsp  *bool `json:",omitempty"`
 	TargetUsesQCOMLegacyBsp  *bool `json:",omitempty"`
 	BoardUsesLegacyAlsa  *bool `json:",omitempty"`
+	Cant_reallocate_omx_buffers *bool `json:",omitempty"`
 }
