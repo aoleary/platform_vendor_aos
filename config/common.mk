@@ -109,6 +109,10 @@ PRODUCT_PACKAGES += \
     PixelTheme \
     Stock
 
+# Fonts
+PRODUCT_PACKAGES += \
+    Custom-Fonts
+
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
