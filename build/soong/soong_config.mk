@@ -27,6 +27,7 @@ aos_soong:
 	echo '    "QCOMDisplayPath": "$(call project-path-for,qcom-display)",';  \
 	echo '    "QCOMGPSPath": "$(call project-path-for,qcom-gps)",';  \
 	echo '    "QCOMMediaPath": "$(call project-path-for,qcom-media)",';  \
-	echo '    "QCOMSensorsPath": "$(call project-path-for,qcom-sensors)"';  \
+	echo '    "QCOMSensorsPath": "$(call project-path-for,qcom-sensors)",';  \
+	echo '    "Uses_qti_camera_device": $(if $(filter true,$(TARGET_USES_QTI_CAMERA_DEVICE)),true,false)'; \
 	echo '},'; \
 	echo '') > $(SOONG_VARIABLES_TMP)
