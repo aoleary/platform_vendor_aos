@@ -53,4 +53,7 @@
     <color name="toast_bg_color">@*android:color/background_material_dark</color>
     <color name="toast_text_color">@android:color/white</color>
 
+    <!-- Fastscroller thumb text color -->
+    <color name="fastscroller_thumb_text_color">@android:color/black</color>
+
 </resources>
