@@ -72,7 +72,6 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
     Retro \
-    Etar \
     Turbo \
     Launcher3 \
     DarknessHub \
