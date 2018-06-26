@@ -30,4 +30,5 @@ PRODUCT_GENERIC_PROPERTIES += \
     ro.storage_manager.enabled=true \
     ro.boot.vendor.overlay.theme=com.google.android.theme.pixel \
     persist.sys.disable_rescue=true \
-    dalvik.vm.debug.alloc=0
+    dalvik.vm.debug.alloc=0 \
+    ro.setupwizard.rotation_locked=true
