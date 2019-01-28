@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # The source directory; this is automatically two folder up because the script
-# is located in vendor/du/scripts. Other ROMs will need to change this. The logic is
+# is located in vendor/aos/scripts. Other ROMs will need to change this. The logic is
 # as follows:
 # 1. Get the absolute path of the script with readlink in case there is a symlink
 #    This script may be symlinked by a manifest so we need to account for that
@@ -69,8 +69,8 @@ function get_repos() {
   for i in ${repos[@]}
   do
     if grep -q "$i" /tmp/rebase.tmp; then # If Google has it and
-      if grep -q "$i" $WORKING_DIR/manifest/o8x_default.xml; then # If we have it in our manifest and
-        if grep "$i" $WORKING_DIR/manifest/o8x_default.xml | grep -q "remote="; then # If we track our own copy of it
+      if grep -q "$i" $WORKING_DIR/manifest/aos.xml; then # If we have it in our manifest and
+        if grep "$i" $WORKING_DIR/manifest/aos.xml | grep -q "remote="; then # If we track our own copy of it
           if ! is_in_blacklist $i; then # If it's not in our blacklist
             upstream+=("$i") # Then we need to update it
           else
